@@ -129,30 +129,7 @@
             if(this.checked == true){
                 console.log(phoneNumberDOM[index].value);
                 if(phoneNumberDOM[index].value){
-                    $.ajaxSetup({
-                        headers: {
-                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                        }
-                    });
-                    $.ajax({
-                        type:'POST',
-                        url:'/check-phone',
-                            dataType: "json",
-                            data: {'phone': phoneNumberDOM[index].value},
-                        success:function( response ) {
-                            console.log(typeof response.status);
-                            if(response.status == 201){
-                                phoneMessage.style.display = "block";
-                                phoneMessage.children[0].innerHTML = "<strong>Error!</strong> Please Insert Unique Phone Number";
-                                console.log('aslkdhkasd'); 
-                                phoneCheck = phoneCheck + 1;
-                            }
-                            else{
-                                phoneMessage.style.display = "none";
-                                phoneCheck = 0;
-                            }
-                        }
-                    });
+                   
                 }
                 else{
                     phoneMessage.style.display = "block";
@@ -162,30 +139,7 @@
             }
             else{
                 if(phoneNumberDOM[index].value){
-                    $.ajaxSetup({
-                        headers: {
-                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                        }
-                    });
-                    $.ajax({
-                        type:'POST',
-                        url:'/check-phone',
-                            dataType: "json",
-                            data: {'phone': phoneNumberDOM[index].value},
-                        success:function( response ) {
-                            console.log(typeof response.status);
-                            if(response.status == 201){
-                                phoneMessage.style.display = "block";
-                                phoneMessage.children[0].innerHTML = "<strong>Error!</strong> Please Insert Unique Phone Number";
-                                console.log('eeec'); 
-                                phoneCheck = phoneCheck + 1;
-                            }
-                            else{
-                                phoneMessage.style.display = "none";
-                                phoneCheck = 0;
-                            }
-                        }
-                    });
+                    
                 }
                 else{
                     phoneMessage.style.display = "block";
@@ -384,28 +338,7 @@
             if(this.checked == true){
                 console.log(phoneNumberDOM[index].value);
                 if(phoneNumberDOM[index].value){
-                    $.ajaxSetup({
-                        headers: {
-                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                        }
-                    });
-                    $.ajax({
-                        type:'POST',
-                        url:'/check-phone',
-                            dataType: "json",
-                            data: {'phone': phoneNumberDOM[index].value},
-                        success:function( response ) {
-                            console.log(typeof response.status);
-                            if(response.status == 201){
-                                phoneMessage.style.display = "block";
-                                phoneMessage.children[0].innerHTML = "<strong>Error!</strong> Please Insert Unique Phone Number";
-                                console.log(phoneMessage.children[0]);  
-                            }
-                            else{
-                                phoneMessage.style.display = "none";
-                            }
-                        }
-                    });
+                    
                 }
                 else{
                     phoneMessage.style.display = "block";
@@ -415,28 +348,7 @@
             }
             else{
                 if(phoneNumberDOM[index].value){
-                    $.ajaxSetup({
-                        headers: {
-                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                        }
-                    });
-                    $.ajax({
-                        type:'POST',
-                        url:'/check-phone',
-                            dataType: "json",
-                            data: {'phone': phoneNumberDOM[index].value},
-                        success:function( response ) {
-                            console.log(typeof response.status);
-                            if(response.status == 201){
-                                phoneMessage.style.display = "block";
-                                phoneMessage.children[0].innerHTML = "<strong>Error!</strong> Please Insert Unique Phone Number";
-                                console.log(phoneMessage.children[0]);  
-                            }
-                            else{
-                                phoneMessage.style.display = "none";
-                            }
-                        }
-                    });
+                    
                 }
                 else{
                     phoneMessage.style.display = "block";
